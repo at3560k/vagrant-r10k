@@ -6,6 +6,9 @@ group :development do
   else
     gem "vagrant", git: "https://github.com/mitchellh/vagrant.git", branch: 'master'
   end
+
+  gem 'puppet', '~> 3.7.5'
+
   # Pinned on 12/10/2014. Compatible with Vagrant 1.5.x, 1.6.x and 1.7.x.
   gem 'vagrant-spec', :github => 'mitchellh/vagrant-spec', :ref => '1df5a3a'
   gem 'simplecov', :require => false
